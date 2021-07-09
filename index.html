@@ -8,28 +8,52 @@
   </head>
   <body>
     <header>
-      <h3>Setup</h3>
       <nav>
-        <ol>
-          <li>Google Chrome</li>
-          <li>Visual Studio Code</li>
-          <li>Figma</li>
-          <li>Github</li>
-        </ol>
-        <h3>Conceptos esenciales del Desarrollo Web</h3>
-        <ol>
-          <li>Qué es HTML</li>
-          <li>Etiquetas</li>
-          <li>DOM</li>
-          <li>Semántica</li>
-          <li>Atributos</li>
-          <li>Qué es CSS</li>
-        </ol>
+        <details open>
+          <summary>Setup</summary>
+          <ol>
+            <li>
+              <a href="#google-chrome">Google Chrome</a>
+            </li>
+            <li>
+              <a href="#vsc">Visual Studio Code</a>
+            </li>
+            <li>
+              <a href="#figma">Figma</a>
+            </li>
+            <li>
+              <a href="#github">Github</a>
+            </li>
+          </ol>
+        </details>
+        <details open>
+          <summary>Conceptos esenciales del Desarrollo Web</summary>
+          <ol>
+            <li>
+              <a href="#html">Qué es HTML</a>
+            </li>
+            <li>
+              <a href="#etiqueta">Etiquetas</a>
+            </li>
+            <li>
+              <a href="#dom">DOM</a>
+            </li>
+            <li>
+              <a href="#semantica">Semántica</a>
+            </li>
+            <li>
+              <a href="#atributos">Atributos</a>
+            </li>
+            <li>
+              <a href="#css">Qué es CSS</a>
+            </li>
+          </ol>
+        </details>
       </nav>
     </header>
     <h1>Curso esencial de HTML y CSS</h1>
     <p>
-      Este es el inicio de tu carrera como Desarrollador Web, empezarás
+      Este es el inicio de tu carrera como Desarrollador Web, empezarásñ
       aprendiendo HTML y CSS para la creación de contenidos, en el nivel 2
       aprenderás de componentes y en 3 sobre layouts.
     </p>
@@ -41,6 +65,7 @@
       src="./images/google-chrome.png"
       alt="Logo de google chrome"
       title="Logo de google chrome"
+      id="google-chrome"
     />
     <h3>Google Chrome</h3>
     <p>
@@ -53,6 +78,7 @@
       src="./images/visual-studio-code.png"
       alt="Logo del editor visual studio code"
       title="Logo del editor visual studio code"
+      id="vsc"
     />
     <h3>Visual Studio Code</h3>
     <p>
@@ -61,7 +87,12 @@
       plugins lo hace el complemento perfecto para cualquier programador sin
       importar el lenguaje en el que se desemvuelva.
     </p>
-    <img src="./images/figma.png" alt="Logo de Figma" title="Logo de Figma" />
+    <img
+      id="figma"
+      src="./images/figma.png"
+      alt="Logo de Figma"
+      title="Logo de Figma"
+    />
     <h3>Figma</h3>
     <p>
       Figma es una la herramienta más popular en la actualidad para entregar
@@ -72,6 +103,7 @@
       src="./images/gitHub.png"
       alt="Logo de GitHub"
       title="Logo de GitHub"
+      id="github"
     />
     <h3>Github</h3>
     <p>
@@ -85,13 +117,27 @@
     <hr />
     <h2>Conceptos esenciales del Desarrollo Web</h2>
 
-    <h3>Qué es HTML</h3>
+    <h3 id="html">Qué es HTML</h3>
     <p>
       Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el
       componente más básico de la web. Define el significado y la estructura del
-      contenido.
+      contenido. <code>const name = "anthony"</code>
     </p>
-    <h3>Etiquetas</h3>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+    <h3 id="etiqueta">Etiquetas</h3>
     <p>
       Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al
       contenido de nuestro website y cada una tiene características y usos
@@ -107,7 +153,7 @@
       Developer.
     </p>
 
-    <h3>DOM</h3>
+    <h3 id="dom">DOM</h3>
     <p>
       El Document Object Model es una estructura de árbol que representará todos
       nuestros proyectos web como si un árbol genealógico fuera: padres, hijos,
@@ -119,7 +165,7 @@
       src="./images/dom.png"
       alt="Representación del Document Object Model"
     />
-    <h3>Semántica</h3>
+    <h3 id="semantica">Semántica</h3>
     <p>
       La semántica le brinda sentido a cada elemento existen en un sitio web,
       algunos elementos será meramente decorativos y no deben significar nada
@@ -131,7 +177,7 @@
       web, para que personas con habilidades diferentes puedan entender cada
       contenido.
     </p>
-    <h3>Atributos</h3>
+    <h3 id="atributos">Atributos</h3>
     <p>
       Los atributos le dan características extra a las etiquetas para
       complementar información y son pre programadas por el navegador, algunos
@@ -139,7 +185,7 @@
       pero otros atributos funcionan en solo alguna etiquetas como src
     </p>
 
-    <h3>CSS</h3>
+    <h3 id="css">CSS</h3>
     <p>
       Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el
       lenguaje de estilos utilizado para describir la presentación de documentos
@@ -193,5 +239,9 @@
       src="./images/leonidas-esteban.png"
       alt="Fotografía de Leonidas Esteban"
     />
+    <p>
+      Si tienes alguna pregunta escríbeme a
+      <a href="mailto:anthonysa0813@gmail.com">me@leonidasesteban.com</a>
+    </p>
   </body>
 </html>
