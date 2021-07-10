@@ -1,0 +1,76 @@
+:root {
+  --gray40: #212121;
+  --gray30: #212429;
+  --gray20: #424242;
+  --gray10: #616161;
+}
+
+html {
+  font-size: 16px;
+  color: var(--gray40);
+}
+
+body {
+  color: var(--gray40);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: var(--gray40);
+}
+
+header {
+  font-size: 14px;
+}
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--gray40);
+}
+
+h1 {
+  font-size: 3.75em;
+  color: var(--gray40);
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--gray40);
+}
+.section-content h3 {
+  font-size: 1.5em;
+  color: var(--gray20);
+  counter-reset: reset;
+  counter-increment: titleList;
+}
+.section-content h3::after {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background: var(--gray20);
+  display: inline-block;
+}
+
+.section-content h3::before {
+  content: counter(titleList) ".-";
+}
+.hero {
+  height: 350px;
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    ),
+    url(../images/patron-1.png);
+}
+
+pre {
+  background: #fec62e;
+}
+
+.content-dom img {
+  max-width: 100%;
+}

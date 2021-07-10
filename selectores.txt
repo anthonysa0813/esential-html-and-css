@@ -1,0 +1,22 @@
+body .title {
+  esto significa un elemento con la clase title que este adentro del body
+}
+
+> Hijo directo: Los hijos directos del selector previo a >
+body > .title {
+  solo le dará los valores de css a la primera línea de hijos
+}
+
+~ Hermano: Los elementos en el mismo nivel
+h1 ~ h2 {
+  color: red;
+}
+- en este ejemplo, le dará el color red a todos los h2 que sean hermanos de h1
+
++ adyacente: como el hermano pero solo el más cercano
+h1 + h2 {
+  color : green;
+}
+
+<h1>Hola</h1>
+<h2>Ke</h2>  // el adyacente afecta aquí!
