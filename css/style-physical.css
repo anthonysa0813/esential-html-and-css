@@ -8,6 +8,7 @@
 html {
   font-size: 16px;
   color: var(--gray40);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,16 +21,30 @@ a {
   color: var(--gray40);
 }
 
-header {
-  font-size: 14px;
-}
 header a {
   color: var(--gray10);
   text-decoration: none;
 }
-
+header {
+  /* background-color: red; */
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  font-weight: 400;
+  position: absolute;
+  width: 188px;
+  left: -232px;
+  top: 64px;
+}
+.header-content {
+  position: relative;
+}
 header a:hover {
   color: var(--gray40);
+}
+.header {
+  position: sticky;
+  top: 0;
 }
 
 h1 {
@@ -37,6 +52,7 @@ h1 {
   color: var(--gray40);
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: 400;
 }
 h1 + p {
   margin-bottom: 64px;
@@ -48,6 +64,11 @@ h2 {
   font-size: 2em;
   color: var(--gray40);
 }
+h3 {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
 .section-content h3 {
   font-size: 1.5em;
   color: var(--gray20);
@@ -55,13 +76,20 @@ h2 {
   counter-increment: titleList;
   margin-top: 16px;
   margin-top: 40px;
+  /* position: relative; */
+  padding-bottom: 8px;
 }
 .section-content h3::after {
   content: "";
-  width: 32px;
+  width: 80px;
+  margin-top: 4px;
   height: 4px;
   background: var(--gray20);
   display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .section-content h3::before {
@@ -165,4 +193,11 @@ ul li {
 .email {
   margin-top: 72px;
   margin-bottom: 40px;
+}
+
+/* wrapper  */
+
+.wrapper {
+  margin: 0 auto;
+  width: 902px;
 }
