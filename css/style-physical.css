@@ -1,0 +1,168 @@
+:root {
+  --gray40: #212121;
+  --gray30: #212429;
+  --gray20: #424242;
+  --gray10: #616161;
+}
+
+html {
+  font-size: 16px;
+  color: var(--gray40);
+}
+
+body {
+  color: var(--gray40);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: var(--gray40);
+}
+
+header {
+  font-size: 14px;
+}
+header a {
+  color: var(--gray10);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--gray40);
+}
+
+h1 {
+  font-size: 3.75em;
+  color: var(--gray40);
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+h1 + p {
+  margin-bottom: 64px;
+}
+hr {
+  color: var(--gray10);
+}
+h2 {
+  font-size: 2em;
+  color: var(--gray40);
+}
+.section-content h3 {
+  font-size: 1.5em;
+  color: var(--gray20);
+  counter-reset: reset;
+  counter-increment: titleList;
+  margin-top: 16px;
+  margin-top: 40px;
+}
+.section-content h3::after {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background: var(--gray20);
+  display: inline-block;
+}
+
+.section-content h3::before {
+  content: counter(titleList) ".-";
+}
+.hero {
+  height: 350px;
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    ),
+    url(../images/patron-1.png);
+}
+
+pre {
+  background: #fec62e;
+  padding: 40px;
+}
+
+.content-dom {
+}
+.content-dom img {
+  max-width: 100%;
+  height: 470px;
+  /* max-height: 100%; */
+}
+
+/* margenes */
+
+.section-content h2 {
+  margin-top: 64px;
+  margin-bottom: 0;
+  /* padding-bottom: 0.1px; */
+}
+
+.section-content img {
+  margin-top: 40px;
+}
+
+.section-content p {
+  margin-bottom: 0;
+
+  margin-top: 0;
+}
+
+blockquote {
+  /* margin-left: 0; */
+  margin: 32px 0 0 0;
+  padding-left: 1em;
+  border-left: 4px solid var(--gray40);
+}
+blockquote p {
+  line-height: 2em;
+  font-size: 24px;
+}
+blockquote span {
+  color: var(--gray10);
+  /* margin-top: 16px; */
+}
+blockquote p:last-child {
+  margin-top: 1em;
+}
+blockquote span::before {
+  content: "-";
+}
+.section-content + hr {
+  display: none;
+}
+
+.imagen-css {
+  height: 428px;
+}
+
+.section-content:last-child {
+  margin-top: 156px;
+}
+.section-content:last-child h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.section-content:last-child h4 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  line-height: 28.13px;
+  font-size: 24px;
+  color: var(--gray20);
+}
+.section-content:last-child p,
+ol li,
+ul li {
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--gray20);
+}
+.section-content:last-child h4 + img {
+  margin-top: 0;
+  height: 464px;
+}
+.email {
+  margin-top: 72px;
+  margin-bottom: 40px;
+}
