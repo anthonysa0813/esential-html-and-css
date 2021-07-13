@@ -1,0 +1,9 @@
+Margenes con valores logicos
+- margin-inline: que se refiere a horizontal en el caso del
+writing-mode este de ltr
+- margin-block: se refiere a la parte de top y bottom (arriba 
+y abajo)
+- margin-inline-start
+- margin-inline-end
+- margin-block-start
+- margin-block-end

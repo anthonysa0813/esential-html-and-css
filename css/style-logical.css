@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap");
+
+:root {
+  --dark20: #251f24;
+  --dark10: #3a3539;
+  --white20: #fff;
+  --white10: #a5a3a5;
+}
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--white10);
+  background-color: var(--dark20);
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: var(--white10);
+}
+
+header {
+  font-size: 14px;
+}
+header a {
+  color: var(--white10);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white20);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4em;
+  color: var(--white20);
+  line-height: 87.3px;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--white20);
+}
+.section-content h3 {
+  font-size: 1.5em;
+  color: var(--white20);
+  counter-reset: reset;
+  counter-increment: titleList;
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+
+.section-content h3::before {
+  content: counter(titleList) ".-";
+}
+.hero {
+  height: 350px;
+  background: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+}
+
+pre {
+  background: var(--dark10);
+  border-radius: 8px;
+  margin-block-end: 40px;
+  max-inline-size: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 40px;
+}
+
+.content-dom img {
+  max-width: 100%;
+}
+
+.main p {
+  margin-block: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+hr {
+  border-color: rgba(97, 97, 97, 0.2);
+  margin-block: 40px;
+}
+.main h2 {
+  margin-block-start: 40px;
+}
+
+.main img {
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+  display: block;
+}
+
+blockquote {
+  background-color: var(--dark10);
+  color: var(--white20);
+  border-radius: 8px;
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  margin-inline: 0;
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+}
+
+.section-content + hr {
+  display: none;
+}
+.section-content h2 {
+  margin-block-end: 40px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43.65px;
+}
+
+.imagen {
+  max-inline-size: 100%;
+}
+.main .imagen-css {
+  margin-block-end: 122.87px;
+}
+.main .section-content:last-child {
+  background-color: red;
+}
+
+.section-content h4 {
+  margin-block: 16px;
+}
+
+.title1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32.74px;
+  color: var(--white20);
+}
+.title2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 43.65px;
+  color: var(--white20);
+}
+
+.wrapper {
+  max-inline-size: 902px;
+  margin: 0 auto;
+}
+
+.main-content {
+  padding: 16px;
+}
+
+header {
+  /* border: 1px solid red; */
+  width: 188px;
+  position: absolute;
+  left: -188px;
+  top: 64px;
+}
+
+.header-content {
+  position: relative;
+}
+header {
+  /* background-color: red; */
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  font-weight: 400;
+  position: absolute;
+  width: 188px;
+  left: -232px;
+  top: 300px;
+}
+
+.menu-content {
+  width: 188px;
+  position: absolute;
+  left: 80px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-content {
+  font-size: 14px;
+
+  line-height: 24px;
+  font-weight: normal;
+  font-weight: 400;
+  position: absolute;
+  width: 188px;
+  left: 50px;
+  top: 64px;
+}
+
+.menu-content nav ul li {
+  list-style: none;
+}
+.menu-content nav ul li a {
+  text-decoration: none;
+  padding: 8px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.menu-content nav ul li a:hover {
+  color: white;
+  background-color: black;
+}
