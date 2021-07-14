@@ -31,27 +31,20 @@ header {
   line-height: 24px;
   font-weight: normal;
   font-weight: 400;
-  position: absolute;
-  width: 188px;
-  left: -232px;
-  top: 300px;
+  margin: 20px;
 }
 
-.header-content {
-  position: relative;
-}
 header a:hover {
   color: var(--gray40);
 }
-.header {
-  position: sticky;
-  top: 0;
+main {
+  padding: 10px;
 }
 
 h1 {
-  font-size: 3.75em;
+  font-size: 2.5em;
   color: var(--gray40);
-  margin-top: 64px;
+  margin-top: 25px;
   margin-bottom: 16px;
   font-weight: 400;
 }
@@ -97,7 +90,7 @@ h3 {
   content: counter(titleList) ".-";
 }
 .hero {
-  height: 350px;
+  height: 100px;
   background-image: linear-gradient(
       to top,
       rgba(255, 255, 255, 0.3),
@@ -109,11 +102,13 @@ h3 {
 pre {
   background: #fec62e;
   padding: 40px;
+  overflow: auto;
 }
 
 .content-dom img {
   max-width: 100%;
-  height: 470px;
+
+  /* object-fit: cover; */
   /* max-height: 100%; */
 }
 
@@ -161,6 +156,7 @@ blockquote span::before {
 
 .imagen-css {
   height: 428px;
+  /* object-fit: cover; */
 }
 
 .section-content:last-child {
@@ -198,13 +194,12 @@ ul li {
 
 .wrapper {
   margin: 0 auto;
-  width: 902px;
+  width: 100%;
 }
 
 .menu-content {
   width: 188px;
   position: absolute;
-  left: 80px;
 }
 
 .menu {
@@ -219,8 +214,8 @@ ul li {
   font-weight: 400;
   position: absolute;
   width: 188px;
-  left: 50px;
-  top: 64px;
+  right: 20px;
+  top: 30px;
 }
 
 .menu-content nav ul li {
@@ -237,4 +232,173 @@ ul li {
 .menu-content nav ul li a:hover {
   color: white;
   background-color: var(--gray40);
+}
+
+/* 
+slider
+*/
+
+.slider-container {
+  /* height: 100px; */
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.video {
+  margin: 0;
+  /* border: 1px solid blue; */
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.slider-bullet-list {
+  text-align: center;
+}
+
+.slider-bullet {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background: var(--gray30);
+  border-radius: 50%;
+}
+
+.slider-bullet:hover {
+  background-color: var(--gray20);
+}
+
+footer {
+  height: 200px;
+  background-color: var(--gray40);
+}
+footer img {
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding-top: 48px;
+}
+.sociales img {
+  display: inline;
+  margin-right: 22px;
+}
+.sociales {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+/* responsive design */
+
+@media screen and (min-width: 1400px) {
+  header a {
+    color: var(--gray10);
+    text-decoration: none;
+  }
+  header {
+    /* background-color: red; */
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    font-weight: 400;
+    position: absolute;
+    width: 188px;
+    left: -232px;
+    top: 140px;
+  }
+
+  .header-content {
+    position: relative;
+  }
+  header a:hover {
+    color: var(--gray40);
+  }
+  .header {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1284px) {
+  .hero {
+    height: 350px;
+    background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.3),
+        transparent
+      ),
+      url(../images/patron-1.png);
+  }
+  .menu-content {
+    width: 188px;
+    position: absolute;
+    left: 80px;
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .menu-content {
+    font-size: 14px;
+
+    line-height: 24px;
+    font-weight: normal;
+    font-weight: 400;
+    position: absolute;
+    width: 188px;
+    left: 50px;
+    top: 30px;
+  }
+
+  .menu-content nav ul li {
+    list-style: none;
+  }
+  .menu-content nav ul li a {
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .menu-content nav ul li a:hover {
+    color: white;
+    background-color: var(--gray40);
+  }
+}
+
+@media screen and (min-width: 902px) {
+  .video {
+    margin: 0;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  .wrapper {
+    margin: 0 auto;
+    width: 902px;
+  }
+}
+
+@media screen and (min-width: 690px) {
+  .hero-container {
+    right: 20px;
+  }
+  .content-dom img {
+    height: 470px;
+  }
+  h1 {
+    font-size: 3.75em;
+    color: var(--gray40);
+    margin-top: 64px;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+  h1 + p {
+    margin-bottom: 64px;
+  }
 }

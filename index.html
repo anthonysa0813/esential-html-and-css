@@ -27,9 +27,6 @@
               <li>
                 <a href="/page2.html">Nemium B</a>
               </li>
-              <li><a href="/page3.html">Nemium C</a></li>
-              <li><a href="/page4.html">Nemium D</a></li>
-              <li><a href="page5.html">Nemium E</a></li>
             </ul>
           </nav>
         </div>
@@ -243,11 +240,9 @@
               CSS es el lenguaje de estilos utilizado para describir la
               presentación de documentos HTML
             </p>
-            <img
-              class="imagen-css imagen"
-              src="./images/css.png"
-              alt="Imagen que representa a CSS"
-            />
+            <div class="content-dom">
+              <img src="./images/css.png" alt="Imagen que representa a CSS" />
+            </div>
           </section>
           <hr />
           <section class="section-content">
@@ -296,13 +291,55 @@
                 padding-block-end | padding-inline-start | padding-inline-end
               </li>
             </ul>
-            <h4 class="title1">Modelo de caja</h4>
-            <img
-              class="imagen"
-              src="./images/leonidas-esteban.png"
-              alt="Fotografía de Leonidas Esteban"
-            />
           </section>
+          <div class="section-content">
+            <h4 class="modelbox">Modelo de caja</h4>
+            <div class="slider">
+              <scroll-container class="slider-container">
+                <scroll-page class="slider-slide" id="video-1">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/5f5Ig_U2Bpk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-2">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/129HfPylOig"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-3">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/RBESkW6DRFU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+              </scroll-container>
+              <div class="slider-bullet-list">
+                <a href="#video-1" class="slider-bullet"></a>
+                <a href="#video-2" class="slider-bullet"></a>
+                <a href="#video-3" class="slider-bullet"></a>
+              </div>
+            </div>
+          </div>
           <p class="email">
             Si tienes alguna pregunta escríbeme a
             <a href="mailto:anthonysa0813@gmail.com">me@leonidasesteban.com</a>
@@ -310,5 +347,13 @@
         </div>
       </div>
     </main>
+    <footer>
+      <img src="./images/leo-footer.png" alt="el logo de Leonidas" />
+      <div class="sociales">
+        <img src="./images/instagram.png" alt="instagram" />
+        <img src="./images/facebook.png" alt="facebook" />
+        <img src="./images/twitter.png" alt="twitter" />
+      </div>
+    </footer>
   </body>
 </html>

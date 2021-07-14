@@ -24,7 +24,8 @@ a {
 }
 
 header {
-  font-size: 14px;
+  font-size: 16px;
+  padding: 10px;
 }
 header a {
   color: var(--white10);
@@ -43,10 +44,9 @@ h4 {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2.5em;
   color: var(--white20);
   line-height: 87.3px;
-  margin-block-start: 64px;
   margin-block-end: 16px;
 }
 
@@ -67,7 +67,7 @@ h2 {
   content: counter(titleList) ".-";
 }
 .hero {
-  height: 350px;
+  height: 100px;
   background: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
 }
 
@@ -134,9 +134,6 @@ blockquote {
 .main .imagen-css {
   margin-block-end: 122.87px;
 }
-.main .section-content:last-child {
-  background-color: red;
-}
 
 .section-content h4 {
   margin-block: 16px;
@@ -167,30 +164,19 @@ blockquote {
 header {
   /* border: 1px solid red; */
   width: 188px;
-  position: absolute;
-  left: -188px;
-  top: 64px;
 }
 
-.header-content {
-  position: relative;
-}
 header {
   /* background-color: red; */
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
   font-weight: 400;
-  position: absolute;
-  width: 188px;
-  left: -232px;
-  top: 300px;
 }
 
 .menu-content {
   width: 188px;
   position: absolute;
-  left: 80px;
 }
 
 .menu {
@@ -205,7 +191,7 @@ header {
   font-weight: 400;
   position: absolute;
   width: 188px;
-  left: 50px;
+  right: 20px;
   top: 64px;
 }
 
@@ -223,4 +209,139 @@ header {
 .menu-content nav ul li a:hover {
   color: white;
   background-color: black;
+}
+
+.slider-container {
+  /* height: 100px; */
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+footer {
+  height: 200px;
+  background-color: var(--white20);
+}
+footer img {
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding-top: 48px;
+}
+.sociales img {
+  display: inline;
+  margin-right: 22px;
+}
+.sociales {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+.form h2 {
+  display: inline-block;
+}
+
+.form {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+
+.form input[type="submit"] {
+  background-color: #157efb;
+  color: white;
+  width: 30%;
+  line-height: 24px;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1400px) {
+  header {
+    /* border: 1px solid red; */
+    width: 188px;
+    position: absolute;
+    left: -188px;
+    top: 64px;
+  }
+
+  .header-content {
+    position: relative;
+  }
+  header {
+    /* background-color: red; */
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    font-weight: 400;
+    position: absolute;
+    width: 188px;
+    left: -232px;
+    top: 300px;
+  }
+  .menu-content {
+    width: 188px;
+    position: absolute;
+    left: 80px;
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .menu-content {
+    font-size: 14px;
+
+    line-height: 24px;
+    font-weight: normal;
+    font-weight: 400;
+    position: absolute;
+    width: 188px;
+    left: 50px;
+    top: 64px;
+  }
+
+  .menu-content nav ul li {
+    list-style: none;
+  }
+  .menu-content nav ul li a {
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .menu-content nav ul li a:hover {
+    color: white;
+    background-color: black;
+  }
+}
+@media screen and (min-width: 968px) {
+  .form {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 350px;
+  }
+  h1 {
+    font-size: 4em;
+    color: var(--white20);
+    line-height: 87.3px;
+    margin-block-start: 64px;
+    margin-block-end: 16px;
+  }
 }
